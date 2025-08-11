@@ -82,7 +82,7 @@ const isValidUrl = (string) => {
 };
 
 // Routes
-app.post('/api/shorten', async (req, res) => {
+app.post('/.netlify/functions/shorten', async (req, res) => {
   try {
     console.log('POST /api/shorten - Request body:', req.body);
     
